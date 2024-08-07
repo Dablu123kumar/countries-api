@@ -1,0 +1,94 @@
+.back-button{
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1 );
+    padding: 6px 20px;
+    cursor: pointer;
+    background-color: rgb(56, 70, 70);
+}
+main{
+    min-height:87vh;
+}
+.countryShimmer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    max-width: 40%;
+    margin: auto;
+    margin-top: 50px;
+  
+}
+.countryShimmer1{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(176, 170, 170);
+}
+
+.details-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    max-width: 70%;
+    margin: auto;
+}
+
+.details-container img{
+    width: 30%;
+}
+
+
+
+.details h2{
+    margin-block: 10px;
+}
+.details-text{
+    display: flex;
+    justify-content: center;
+    
+    gap: 60px;
+}
+.details-text p{
+    margin: 5px;
+}
+
+.border-countries{
+    
+    display: flex;
+    
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+   
+}
+.border-countries a{
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1 );
+    padding: 4px;
+    margin-top: 15px;
+    background-color: rgb(56, 70, 70);
+}
+
+
+
+@media(max-width:500px){
+    .details-container{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+        gap: 30px;
+        
+    }
+    .details-container img{
+        width: 90%;
+    }
+    .details-text{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .details-text p{
+        font-size: small;
+    }
+    .border-countries a{
+        font-size: small;
+        text-align: center;
+    }
+}
