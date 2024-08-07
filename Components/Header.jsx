@@ -8,7 +8,7 @@ function Header() {
     <div>
       <header className = {`${isDark ? 'dark' : '' }`}>
         <h2>
-          <a href="index.html">Where in the world?</a>
+          <a href="index.html">Where in the worlds?</a>
         </h2>
         <div className="themer">
           <p className="theme-changer" onClick = {() => {
