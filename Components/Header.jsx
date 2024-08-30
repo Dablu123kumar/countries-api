@@ -1,6 +1,7 @@
 import {useState,useContext} from "react";
 import { ThemeContext } from "../Contexts/TheamContext";
 import { UseTheme } from "../hooks/UseTheme";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isDark,setIsDark] =UseTheme()
@@ -8,7 +9,7 @@ function Header() {
     <div>
       <header className = {`${isDark ? 'dark' : '' }`}>
         <h2>
-          <a href="index.html">Where in the world?</a>
+        <Link to='/'>Where in the world?</Link>
         </h2>
         <div className="themer">
           <p className="theme-changer" onClick = {() => {
