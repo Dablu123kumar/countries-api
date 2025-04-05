@@ -10,7 +10,10 @@ function CountriesContainer({ query, filter }) {
       // .then(renderContries)   //1st method
       .then((data) => {
         setCountriesData(data);
-      });
+      })
+      .catch((error)=>{
+        console.log(error)
+      })
   }, []);
   return (
     <>
