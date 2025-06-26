@@ -5,7 +5,7 @@ import CountryLishtShimmer from "./CountryLishtShimmer";
 function CountriesContainer({ query, filter }) {
   const [CountriesData, setCountriesData] = useState([]);
   useEffect(() => {
-    fetch("https://restcountries.com/v3.1/all")
+    fetch("https://restcountries.com/v3.1/all?fields=name,capital,region,flags,population")
       .then((res) => res.json())
       // .then(renderContries)   //1st method
       .then((data) => {
