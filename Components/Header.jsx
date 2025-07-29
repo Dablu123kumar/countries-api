@@ -17,7 +17,7 @@ function Header() {
              localStorage.setItem('isDarkMode', !isDark )
             } }
              >
-            <i className={`fa-regular fa-${isDark? 'sun' : 'moon'}`}> &nbsp;  </i>  {isDark ? 'Light' : 'Dark'} Mode
+            <i className={`fa-regular fa-${isDark? 'sun' : 'moon'}`}> &nbsp;  </i>  {isDark ? 'Light' : 'Dark'}
           </p>
           
         </div>
